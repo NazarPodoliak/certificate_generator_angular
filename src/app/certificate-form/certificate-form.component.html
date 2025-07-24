@@ -1,0 +1,34 @@
+<div class="center-wrapper">
+  <div class="form-card">
+    <div class="header">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Graduation Icon" />
+      <h1>Certificate Generator</h1>
+    </div>
+
+    <h3>Enter Your Details</h3>
+
+    <form [formGroup]="certificateForm" (ngSubmit)="onSubmit()">
+      <label for="name">Name</label>
+      <input id="name" formControlName="name" type="text" placeholder="John Doe" />
+
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" placeholder="john@example.com" />
+
+      <label for="course">Select Course</label>
+      <select id="course" formControlName="course" required>
+        <option value="">-- Select a course --</option>
+        <option *ngFor="let course of courses" [value]="course.course_name">
+          {{ course.course_name }}
+        </option>
+      </select>
+
+      <button type="submit">Generate Certificate</button>
+    </form>
+
+    <div class="status-message" *ngIf="certificateGenerated">
+      Certificate Generated Successfully! 
+      <br>
+      <small>Check your downloads folder for the PDF file.</small>
+    </div>
+  </div>
+</div>

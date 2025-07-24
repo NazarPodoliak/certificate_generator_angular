@@ -1,0 +1,21 @@
+<div class="app-container">
+  <div class="landing-page" *ngIf="showLandingPage">
+    <div class="landing-content">
+      <h1 class="landing-title">Welcome to the Certificate Generator</h1>
+      <p class="landing-description">
+        Create beautiful, professional certificates with ease. Our simple and intuitive tool helps you generate custom certificates for any occasion.
+      </p>
+      <div class="landing-buttons">
+        <button class="get-started-btn" (click)="getStarted()">Get Started</button>
+        <button class="admin-btn" (click)="goToAdmin()">Admin Panel</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-page" *ngIf="!showLandingPage">
+    <div class="form-header">
+      <button class="home-btn" (click)="goHome()">← Back to Home</button>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

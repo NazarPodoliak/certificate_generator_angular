@@ -1,0 +1,100 @@
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.form-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a2b4c;
+}
+
+h3 {
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #1a2b4c;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+select {
+  background-color: white;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2a59b6;
+  box-shadow: 0 0 0 2px rgba(42, 89, 182, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a59b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e4591;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a2b4c;
+}
+  
